@@ -14,6 +14,7 @@ VALIDATE(){
         INSTALL $2
     else
         echo "$2 is already installed"
+    fi
 }
 
 
