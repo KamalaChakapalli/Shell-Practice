@@ -4,9 +4,6 @@ SERVICE=$1
 
 #Check whether the service is already installed or not
 
-dnf list installed $SERVICE
-VALIDATE $? $SERVICE
-
 VALIDATE(){
     if [ $1 -ne 0]
     then
@@ -29,3 +26,6 @@ INSTALL(){
         exit 1
     fi
 }
+
+dnf list installed $SERVICE
+VALIDATE $? $SERVICE
