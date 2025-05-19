@@ -8,12 +8,12 @@ dnf list installed $SERVICE
 VALIDATE $? $SERVICE
 
 VALIDATE(){
-    if [ $? -ne 0]
+    if [ $1 -ne 0]
     then
-        echo "$SERVICE is not installed.. calling INSTALL function"
-        INSTALL $SERVICE
+        echo "$2 is not installed.. calling INSTALL function"
+        INSTALL $2
     else
-        echo "$SERVICE is already installed"
+        echo "$2 is already installed"
 }
 
 
