@@ -5,7 +5,7 @@ SERVICE=$1
 #Check whether the service is already installed or not
 
 VALIDATE(){
-    if [ $1 -ne 0]
+    if [ $1 -ne 0 ]
     then
         echo "$2 is not installed.. calling INSTALL function"
         INSTALL $2
