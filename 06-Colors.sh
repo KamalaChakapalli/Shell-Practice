@@ -20,9 +20,9 @@ INSTALL(){
     dnf install $1 -y
     if [ $? -eq 0 ]
     then
-        echo "\e[32m $1 successfully installed"
+        echo -e "\e[32m $1 successfully installed"
     else
-        echo "\e[31m $1 is failed"
+        echo -e "\e[31m $1 is failed"
         exit 1
     fi
 }
