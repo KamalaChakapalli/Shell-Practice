@@ -15,7 +15,7 @@ VALIDATE(){
 }
 
 
-INSTALL(){
+INSTALL(){ 
 
     dnf install $1 -y
     if [ $? -eq 0 ]

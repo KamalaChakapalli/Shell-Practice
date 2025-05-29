@@ -28,3 +28,7 @@ echo "First Movie : ${MOVIES[0]}"
 
 echo "Fifth Movie : ${MOVIES[4]}"  #there is no value is the position 4. It will print empty
 
+
+
+#Installing MYSQL, PYTHON3 and NGINX 
+
